@@ -1,14 +1,14 @@
 from queue import Queue
 import time
 
-# Створити чергу заявок
+# Створюємо чергу заявок
 queue = Queue()
 
 # Функція generate_request():
 def generate_request():
-    # Створити нову заявку
+    # Створюємо нову заявку
     new_request = "New request"
-    # Додати заявку до черги
+    # Додаємо заявку до черги
     queue.put(new_request)
     print("New request added to the queue")
 
@@ -18,7 +18,7 @@ def process_request():
     if not queue.empty():
         # Видалити заявку з черги
         request = queue.get()
-        # Обробити заявку (мімітуємо обробку, просто виводимо)
+        # Обробити заявку (імітуємо обробку, просто виводимо)
         print("Processing request:", request)
     else:
         # Інакше, якщо черга пуста:
